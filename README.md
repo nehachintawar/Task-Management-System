@@ -31,7 +31,7 @@ Make sure you have the following installed:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone 
+   git clone https://github.com/nehachintawar/Task-Management-System
    ```
 
 2. Navigate into the project directory:
@@ -49,7 +49,7 @@ Make sure you have the following installed:
 4. Start the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
    This will open the application in your default browser at [http://localhost:3000](http://localhost:3000).
