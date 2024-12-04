@@ -1,0 +1,228 @@
+
+/* TaskView.css */
+
+.task-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task-item {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.task-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-status{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d9d9d9;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-status:checked{
+    background-color: #4CAF50;
+}
+
+.toggle-status:checked:before{
+    content: '✔'; /* Unicode checkmark */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+}
+
+.title-date{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+.title-date .task-title{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.title-date .task-due-date{
+    font-size: 1rem;
+    color: blueviolet;
+}
+
+.delete-btn{
+    font-size: 1.8rem;
+    color: red;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    color: rgba(255, 0, 0, 0.705);
+}
+
+
+/* Task Details Container */
+.task-details-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Section Titles */
+.task-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+.task-info-section {
+    margin-bottom: 20px;
+}
+
+.task-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.task-info-table td {
+    padding: 8px 12px;
+    vertical-align: top;
+}
+
+.task-info-table td strong{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+.task-info-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.task-info-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.task-info-table td:first-child {
+    font-weight: bold;
+    width: 150px;
+    color: #333;
+}
+
+/* Task Information Section */
+.task-info-section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Actions Section */
+.task-actions-section {
+    margin-top: 30px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.edit-task-btn,
+.delete-task-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Container for the search bar and results */
+.search-container {
+    position: relative;
+    /* max-width: 500px;
+    margin: auto; */
+}
+
+/* Input field styling */
+.search-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Results container */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto; 
+}
+
+
+.search-result-item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+
+.search-result-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* Title and Date Styling */
+.search-result-item h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.search-result-item p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #666;
+}
