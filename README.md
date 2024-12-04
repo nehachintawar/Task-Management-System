@@ -64,25 +64,25 @@ Make sure you have the following installed:
 
 ## Snapshots
 ***Home Page***
-![Home Page](Screenshots/HomePage.png)
+![Home Page](screenshots/HomePage.png)
 
 ***Pending Tasks***
-![Pending Tasks](Screenshots/PendingTasks.png)
+![Pending Tasks](screenshots/PendingTasks.png)
 
 ***Completed Tasks***
-![Completed Tasks](Screenshots/CompletedTasks.png)
+![Completed Tasks](screenshots/CompletedTasks.png)
 
 ***Search Tasks***
-![Search Tasks](Screenshots/SearchTasks.png)
+![Search Tasks](screenshots/SearchTasks.png)
 
 ***View Tasks***
-![Search Tasks](Screenshots/SearchTasks.png)
+![Search Tasks](screenshots/SearchTasks.png)
 
 ***Edit Tasks***
-![Edit Tasks](Screenshots/EditTasks.png)
+![Edit Tasks](screenshots/EditTasks.png)
 
 ***Delete Tasks***
-![Delete Tasks](Screenshots/DeleteTasks.png)
+![Delete Tasks](screenshots/DeleteTasks.png)
 
 
 
