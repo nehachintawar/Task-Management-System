@@ -29,7 +29,7 @@ function SearchBar() {
                 placeholder="Search tasks..."
                 onKeyUp={searchTasks}
                 onFocus={() => setIsSearchActive(true)} // Set active on focus
-                onBlur={() => setTimeout(()=>setIsSearchActive(false),200)} // Set inactive on blur
+                onBlur={() => setTimeout(()=>setIsSearchActive(false),500)} // Set inactive on blur
                 style={{ maxWidth: '300px' }}
                 className="search-input"
             />
